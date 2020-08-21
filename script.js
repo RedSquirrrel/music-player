@@ -74,9 +74,9 @@ playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 function loadSong(song) {
   title.textContent = song.displayName;
   artist.textContent = song.artist;
-  // audio.src = `music/${song.name}.mp3`;
-  // audio.src = `http://127.0.0.1:5500/music/${song.name}.mp3`;
-  audio.src = `https://redsquirrrel.github.io/test-music-player/music/${song.name}.mp3`;
+  audio.src = `music/${song.name}.mp3`;
+  audio.src = `http://127.0.0.1:5500/music/${song.name}.mp3`;
+  // audio.src = `https://redsquirrrel.github.io/test-music-player/music/${song.name}.mp3`;
   image.src = `img/${song.name}.jpg`;
   console.log(audio.src);
 }
